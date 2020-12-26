@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+ name: pod-example
+ labels:
+  app: sample-pod
+  type: service
+spec:
+ containers:
+  - name: nginx-pod
+    image: nginx
+   
