@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+ name: weblearner-config
+data:
+  application.properties: |
+   app=webleaner
+   desc=Web Tutorial for K8

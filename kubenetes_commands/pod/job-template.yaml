@@ -1,0 +1,14 @@
+apiVersion: batch/v1
+kind: Job
+metadata: 
+  name: myapp-job
+spec: 
+  completions: 3
+  parallelism: 3
+  template: 
+    spec: 
+      containers: 
+        - 
+          image: nginx
+          name: myapp-job
+      restartPolicy: Never
