@@ -1,0 +1,14 @@
+--- 
+apiVersion: v1
+kind: Pod
+metadata: 
+  labels: 
+    app: weblearner-db
+    type: db
+  name: weblearner-db
+spec: 
+  containers: 
+    - 
+      image: mongo
+      name: weblearner-mongodb
+    
